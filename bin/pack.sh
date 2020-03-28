@@ -1,0 +1,1 @@
+sam package --template-file template.yaml --output-template-file deploy.yaml --s3-bucket joevanbucket
