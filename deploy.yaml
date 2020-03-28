@@ -8,6 +8,7 @@ Description: 'sam is my brother
 Globals:
   Function:
     Timeout: 10
+Capabilities: CAPABILITY_IAM,CAPABILITY_AUTO_EXPAND
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
