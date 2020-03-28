@@ -1,0 +1,16 @@
+service: hello_world
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello:
+    handler: app.lambdaHandler
+    events:
+    - http:
+        path: hello
+        method: get
+
+plugins:
+  - serverless-offline
