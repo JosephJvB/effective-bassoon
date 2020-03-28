@@ -8,12 +8,11 @@ Description: 'sam is my brother
 Globals:
   Function:
     Timeout: 10
-
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://joevanbucket/artifacts/58a41f168df5f937f10f3bdcb4c1933b
+      CodeUri: s3://joevanbucket/artifacts/8bb23c192ed7391240265764155f3755
       Handler: app.lambdaHandler
       Runtime: nodejs12.x
       Role: arn:aws:iam::355151872526:role/joeslambda
