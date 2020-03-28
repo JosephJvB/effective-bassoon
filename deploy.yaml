@@ -12,7 +12,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://joevanbucket/2e6c80dffe67c31386c9b9a01de2e6ad
+      CodeUri: s3://joevanbucket/artifacts/488913b96b3ef7f637c4c022814293a4
       Handler: app.lambdaHandler
       Runtime: nodejs12.x
       Events:
