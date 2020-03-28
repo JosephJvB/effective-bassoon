@@ -7,14 +7,15 @@ Description: 'sam is my brother
   '
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 10
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://joevanbucket/artifacts/0233818e1e335bda8df0179f259947b5
+      CodeUri: s3://joevanbucket/artifacts/b5013dda85f92f9e2e4bf2027d2a4504
       Handler: app.lambdaHandler
       Runtime: nodejs12.x
+      Role: arn:aws:iam::355151872526:role/joeslambda
       Events:
         HelloWorld:
           Type: Api
@@ -31,10 +32,4 @@ Outputs:
     Value:
       Fn::GetAtt:
       - HelloWorldFunction
-      - Arn
-  HelloWorldFunctionIamRole:
-    Description: Implicit IAM Role created for Hello World function
-    Value:
-      Fn::GetAtt:
-      - HelloWorldFunctionRole
       - Arn
