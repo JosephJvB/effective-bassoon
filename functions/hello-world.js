@@ -10,10 +10,10 @@
  * @returns {Object} object - API Gateway Lambda Proxy Output Format
  * 
  */
-exports.lambdaHandler = async (event, context) => {
+exports.function = async (event, context) => {
     return {
-        'statusCode': 200,
-        'body': JSON.stringify({
+        statusCode: 200,
+        body: JSON.stringify({
             message: 'hello world',
         })
     }

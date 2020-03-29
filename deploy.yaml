@@ -12,8 +12,8 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://joevanbucket/artifacts/eaee8ed81a4d27ede62308a8e418adcd
-      Handler: app.lambdaHandler
+      CodeUri: s3://joevanbucket/artifacts/9a5b66405532335755b9957f61f5bdd2
+      Handler: hello-world.function
       Runtime: nodejs12.x
       Role: arn:aws:iam::355151872526:role/joeslambda
       Events:

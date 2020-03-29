@@ -1,4 +1,4 @@
-service: hello_world
+service: hello-world
 
 provider:
   name: aws
@@ -6,7 +6,7 @@ provider:
 
 functions:
   hello:
-    handler: app.lambdaHandler
+    handler: functions/hello-world.function
     events:
     - http:
         path: hello

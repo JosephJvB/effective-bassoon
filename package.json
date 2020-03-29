@@ -7,8 +7,11 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {},
-  "scripts": {},
+  "scripts": {
+    "test": "ava tests/*-tests.js"
+  },
   "devDependencies": {
+    "ava": "^3.5.1",
     "serverless-offline": "^6.1.2"
   }
 }
